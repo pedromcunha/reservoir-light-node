@@ -145,21 +145,21 @@ class _LightNode {
         });
       });
 
-      console.clear();
-      const used = process.memoryUsage();
-      const timeSince = formatDistance(processStart, new Date(), {
-        addSuffix: true,
-      });
-      console.log(`Runtime: ${processStart} (${timeSince})`);
-      console.log(
-        `Memory usage: ${Math.round((used.rss / 1024 / 1024) * 100) / 100} MB`
-      );
-      console.table(managers);
-      console.table(
-        workers.sort(
-          (a, b) => new Date(a.date).getDate() - new Date(b.date).getDate()
-        )
-      );
+      // console.clear();
+      // const used = process.memoryUsage();
+      // const timeSince = formatDistance(processStart, new Date(), {
+      //   addSuffix: true,
+      // });
+      // console.log(`Runtime: ${processStart} (${timeSince})`);
+      // console.log(
+      //   `Memory usage: ${Math.round((used.rss / 1024 / 1024) * 100) / 100} MB`
+      // );
+      // console.table(managers);
+      // console.table(
+      //   workers.sort(
+      //     (a, b) => new Date(a.date).getDate() - new Date(b.date).getDate()
+      //   )
+      // );
     }, 100);
   }
 
